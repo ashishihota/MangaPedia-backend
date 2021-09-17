@@ -2,12 +2,10 @@ import express from 'express';
 import {
     ApolloServer
 } from 'apollo-server-express';
-import {
-    graphql
-} from 'graphql';
 
-// import schema from '../graphql/schema';
+import resolvers from '../graphql/resolvers';
 const typeDefs = require('../graphql/typeDefs').default
+// import typeDefs from '../graphql/typeDefs';
 const app = express();
 
 
@@ -15,7 +13,7 @@ const PORT = process.env.PORT || 3000;
 
 const apolloserver = new ApolloServer({
     typeDefs,
-    resolvers: {}
+    resolvers
 })
 
 apolloserver.applyMiddleware({

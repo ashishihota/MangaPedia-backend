@@ -6,7 +6,8 @@
   "scripts": {
     "watch": "babel-watch src/index.js",
     "watch:dev": "babel-node src/index.js",
-    "corn": "babel-watch src/db/dbIndex.js"
+    "corn": "babel-watch src/db/dbIndex.js",
+    "trial" : "babel-watch src/server/trialAndError.js"
   },
   "author": "Ashish Kumar Hota",
   "license": "UNLICENSED",

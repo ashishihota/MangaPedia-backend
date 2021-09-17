@@ -118,3 +118,33 @@
 1. 3000 - main backend server
 2. 3047 - our CORN job for the mongoDB
 3. 3001 - parcel frontend
+
+<br/>
+<br/>
+
+# Problems I have faced so far (I am new to webdev) :-
+
+<br/>
+
+## 1. Babel 6 regeneratorRuntime is not defined
+
+> This is because I am using babel-watch to compile this code (ECMAScript) into js code and I am babel needs helps with converting. To solve this problem i am using the .babel.config.js file with
+
+    module.exports = {
+
+        "presets": ["@babel/env"]
+
+    }
+
+<br/>
+
+## 2. Deleting important files and then regretting
+
+> This repo is the answer to that problem. I was reluctant to upload this to my repo becaues of my bad code, but I thought "WHO CARES??!!". So I am making it public instead of private, cause fuck the haters and love yourself.
+
+<br/>
+<br/>
+
+## 3. Problems with the API
+
+> I am using the MangadexAPI to gather the data, which isn't the problem as I have said before, which is fantastic, but to make my life more miserable, I am making my frontend and backend two seperate apps, and to deal with the complications I am using GraphQL, which I am a novice in, but I want to learn it.
